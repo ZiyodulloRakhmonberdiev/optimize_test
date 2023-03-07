@@ -1,0 +1,37 @@
+@media (max-width: 1366px){
+  .header, .main{
+    max-width: 1200px;
+  }
+  .header{
+    margin-bottom: 2vw;
+  }
+}
+@media (max-width: 1024px){
+  .header{
+    padding: 13px 40px;
+  } 
+  .main{
+    padding: 40px;
+    padding-left: 58px;
+    gap: 32px;
+  }
+  .article .article__info{
+    gap: 20px;
+  }
+  .article .article__map div iframe,
+  .article .article__info .rectangle{
+    height: 105px;
+    width: 150px;
+  }
+  .article .article__map {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: auto;
+  }
+  .article .article__map .article__dropdown input{
+    width: 100px;
+    text-align: right;
+  }
+}

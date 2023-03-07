@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+:root{
+  --blue: rgba(0, 49, 92, 1);
+  --cyan: #0AA9B4;
+  --secondary: #8E8E91;
+  --secondary-text: #4C4C50;;
+  --light-bg: #E9E9EA;
+  --dark: #1F1F24;
+  --dark-text: #4C4C50;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+hr{
+  margin: 0;
+  border-top: 1px solid var(--light-bg);
+}

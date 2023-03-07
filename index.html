@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <title>A-Store</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <a href="#">
+        <div class="header__logo">
+          <div class="header__logo-img">
+            <img src="./assets/images/logo.png" alt="logo">
+          </div>
+          <div class="header__logo-text">
+            <img src="./assets/images/СправочникТашкента.png" alt="Справочник Ташкента">
+            <img src="./assets/images/sprav.png" alt="sprav">
+          </div>
+        </div>
+      </a>
+      <div class="header__lang">
+        <button class="header__lang-item" onclick="editLang(event, 'ru')" id="defaultLang">Ру</button>
+        <button class="header__lang-item" onclick="editLang(event, 'uz')">O‘z</button>
+        <button class="header__lang-item" onclick="editLang(event, 'eng')">En</button>
+        <div id="ru" style="display: hidden;"></div>
+        <div id="uz" style="display: hidden;"></div>
+        <div id="eng" style="display: hidden;"></div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <button class="header__nav-toggler">
+        <img src="./assets/images/hamburger.png" alt="menu">
+      </button>
+      <div class="header__search search">
+        <div class="dropdown">
+          <input type="text" class="dropdown-header-select" placeholder="Ташкент" value="Ташкент" readonly />
+          <ul class="options">
+            <li class="option">Ташкент</li>
+            <li class="option">Фергана</li>
+            <li class="option">Андиджан</li>
+            <li class="option">Наманган</li>
+            <li class="option">Самарканд</li>
+            <li class="option">Джиззах</li>
+          </ul>
+        </div>
+        <form class="search__form">
+          <input type="text" placeholder="Поиск">
+          <button type="submit">
+            <img src="./assets/images/search.png" alt="search">
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <hr />
+  <section class="main">
+    <div class="main__content">
+      <div class="title">
+        <h1><span>A-STORE.UZ </span> ФИРМЕННЫЙ МАГАЗИН</h1>
+        <img src="./assets/images/star.png" alt="star">
+      </div>
+      <p>Контактные данные компании «GOODZONE МАГАЗИН БЫТОВОЙ ТЕХНИКИ И ЭЛЕКТРОНИКИ» — телефоны, местонахождение, режим
+        работы, виды деятельности и другая полезная информация. Пожалуйста, сообщите огранизации, что вы нашли их
+        контакты на сайте Справочник Ташкента — Sprav.uz.</p>
+      <article class="article">
+        <div class="article__head">
+          <div class="article__info">
+            <div class="rectangle"><img src="./assets/images/img_rectangle.png" alt="rectangle"></div>
+            <div>
+              <h4>XIAOMI</h4>
+              <h5><img src="./assets/images/pencil.png" alt="edit">с 2022 года</h5>
+            </div>
+          </div>
+          <div class="article__map">
+            <div class="article__dropdown">
+              <input type="text" class="dropdown-article-select" placeholder="Филиалы" readonly />
+              <ul class="article__options">
+                <li class="article__option">Ташкент</li>
+                <li class="article__option">Фергана</li>
+                <li class="article__option">Андиджан</li>
+                <li class="article__option">Наманган</li>
+                <li class="article__option">Самарканд</li>
+                <li class="article__option">Джиззах</li>
+              </ul>
+            </div>
+            <div><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.650842954094!2d69.30406544058543!3d41.27963999915383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5c2cbe4145d%3A0xde89650c46b253b8!2zT1BUSU1JWkUgLSDQv9GA0L7QtNCy0LjQttC10L3QuNC1INC4IFNFTy3QvtC_0YLQuNC80LjQt9Cw0YbQuNGPINGB0LDQudGC0L7Qsg!5e0!3m2!1suz!2s!4v1678009515187!5m2!1suz!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+        <div class="article__body">
+          <div class="article__body-item">
+            <img src="./assets/images/location.png" alt="location">
+            <p class="address">Ташкент, Шайхантахурский р-н, пр-т Амира Темура, 129Б</p>
+          </div>
+          <!-- ---- -->
+          <div class="article__body-item">
+            <img src="./assets/images/pin.png" alt="pin">
+            <p class="pin">I MAXI супермаркет, ЮНУСАБАДСКИЙ РАЙОННЫЙ СУД ПО УГОЛОВНЫМ ДЕЛАМ</p>
+          </div>
+          <!-- ---- -->
+          <div class="article__body-item items">
+            <div class="item">
+              <img src="./assets/images/phone.png" alt="phone">
+              <ul>
+                <a class="tel" href="tel:998712077777">+998 71 207-XX-XX</a>
+                <li><button>Показать номер</button></li>
+              </ul>
+            </div>
+            <!-- ---- -->
+            <div class="item">
+              <img src="./assets/images/time.png" alt="phone">
+              <div class="items items__row">
+                <div class="items items__col">
+                  <label>Сегодня</label>
+                  <span>с 10 до 21</span>
+                </div>
+                <div class="items items__col">
+                  <label>Перерыв</label>
+                  <span>без перерыва</span>
+                </div>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="items items__row">
+              <div class="items items__link">
+                <img src="./assets/images/web.png" alt="website">
+                <a href="#">A-STORE.UZ</a>
+              </div>
+              <div class="items items__link">
+                <img src="./assets/images/message.png" alt="website">
+                <a href="#">Показать e-mail</a>
+              </div>
+            </div>
+            <!-- ---- -->
+          </div>
+        </div>
+        <div class="article__footer">
+          <p>
+            Различное профессиональное музыкальное оборудование. Бесплатная доставка
+            музыкальных
+            инструментов и платная – аксессуаров, таких как струны, подставки и т.д. в пределах города Ташкента.
+          </p>
+        </div>
+      </article>
+      <div class="tabs">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Informations')">Информация</button>
+          <button class="tablinks" onclick="openTab(event, 'Gallery')">Фотогалерея</button>
+          <button class="tablinks" onclick="openTab(event, 'Schedule')">График работы</button>
+          <button class="tablinks" onclick="openTab(event, 'Tasks')">Виды деятельности</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Informations" class="tabcontent">
+        </div>
+
+        <div id="Gallery" class="tabcontent">
+        </div>
+
+        <div id="Schedule" class="tabcontent">
+        </div>
+        <div id="Tasks" class="tabcontent">
+        </div>
+      </div>
+    </div>
+    <div class="main__sidebar">
+
+    </div>
+
+  </section>
+  <script src="./script/main.js"></script>
+</body>
+
+</html>
